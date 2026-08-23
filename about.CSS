@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+} 
+body {
+    margin: 0;
+    min-height: 100vh;  
+    background-image: url(sciencelab.jpg);
+    background-size: cover;
+    background-position: center; 
+    font-family: "Times New Roman", Times, sans-serif;
+} 
+.navbar {
+    width: 100%;
+    padding: 15px 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background-color: rgba(5, 5, 43, 1.0); 
+} 
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+} 
+.nav {
+    display: flex;
+    gap: 30px;
+} 
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    color: lightblue;
+    text-decoration: underline;
+} 
+
+.about-card {
+    width: 70%; 
+    max-width: 750px; 
+    margin: 50px auto;
+    padding: 25px; 
+    background-color: aliceblue;  
+    border: 3px solid navy;
+    border-radius: 20px; 
+    text-align: center;
+}
+
+.about-card h1 {
+    margin: 0 0 20px; 
+    font-size: 40px;
+    color: steelblue;
+}
+
+.about-card p {
+    margin: 20px 0; 
+    font-size: 20px;
+    line-height: 1.6; 
+    font-weight: 600;
+    color: navy;
+} 
+footer {
+    color: white; 
+    margin: 0 auto 12px;
+    padding: 10px ;
+    text-align: center;   
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    width: 70%;
+    max-width: 550px;
+    background-color: rgba(5, 5, 43, 1.0);  
+    border-radius: 20px ; 
+    border: 3px solid steelblue;
+} 
+.copyright{
+    font-size: 20px;
+}
+footer p {
+    margin:3px auto;
+} 
+@media (max-width: 600px) { 
+    body {
+        background-image: url("sciencemobile.jpg");
+        background-size: cover;
+        background-position: center;
+        margin:0;
+        min-height: 100vh; 
+    }
+    .navbar {
+        padding: 12px 18px;
+    } 
+    .logo {
+        font-size: 18px;
+    } 
+    .nav {
+        gap: 15px;
+    } 
+    .nav a {
+        font-size: 15px;
+    } 
+    .about-card {
+        width: 90%;
+        margin: 40px auto 20px ;
+        padding: 20px;
+    } 
+    .about-card h1 {
+        font-size: 30px;
+    } 
+    .about-card p {
+        font-size: 16px;
+        line-height: 1.5;
+    } 
+    footer {
+        width: 85%;
+        padding: 12px; 
+        font-size: 14px; 
+        margin: 10px auto;
+    }
+    .copyright{
+        font-size: 16px;
+    }
+    footer p {
+        margin: 3px auto;
+    }
+}
